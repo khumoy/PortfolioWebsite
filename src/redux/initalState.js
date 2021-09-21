@@ -1,5 +1,4 @@
 const initalState = {
-    students: [],
     isSidebarShow: true,
     courses: [
         {

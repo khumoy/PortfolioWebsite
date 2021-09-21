@@ -1,1 +1,1 @@
-export const SET_STUDENTS = "SET_STUDENTS";
+export const TOGGLE_MENU = "TOGGLE_MENU";

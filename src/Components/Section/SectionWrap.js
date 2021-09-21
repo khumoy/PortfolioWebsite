@@ -3,16 +3,16 @@ export const SectionWrap = styled.div`
 .first-section{
         background: url('https://fit.mospolytech.ru/assets/img/programs/09.03.01.01/cover.jpg') ;
         background-size: cover;
-        /* background-position: center; */
         background-repeat: no-repeat; 
-        height: 90vh;
+        padding: 100px 0;
+        height: 100vh;
         width: 100%;
-        margin-top: 60px;
+        color: white;
         text-align: center;
         
     .text {
         color:  white;
-        margin: 80px 10px 30px;
+        margin: 120px 10px 30px;
         font-size: 55px;
     }
     .btn-contact {
@@ -39,11 +39,22 @@ export const SectionWrap = styled.div`
   .text {
     font-size: 40px !important;
   }
+  .first-section {
+    margin-top: 0;
+    padding-bottom: 150px;
+    }
 
 }
 @media only screen and (max-width: 500px) {
   .first-section{
       background-position: center;
+  }
+}
+@media (max-height: 500px) {
+  .text {
+    font-size: 30px !important;
+    margin: 90px 10px 30px !important;
+
   }
 }
 `

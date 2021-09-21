@@ -1,11 +1,11 @@
 import initalState from "./initalState";
-import { SET_STUDENTS } from "./types";
+import { TOGGLE_MENU } from "./types";
 
 
 const reducer = (state = initalState, action) => {
     switch (action.type) {
-        case SET_STUDENTS: return { ...state, students: action.payload };
-
+        case TOGGLE_MENU:
+            return { ...state, isSidebarShow: !state.isSidebarShow }
         default: return state;
     }
 }

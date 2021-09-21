@@ -7,19 +7,21 @@ const Section = () => {
     return (
         <SectionWrap>
             <div className="first-section pt-5">
-                <h1 className="text">Front-End Development  Courses
-                    <Typewriter
-                        options={{
-                            strings: [
-                                'HTML', 'CSS', 'Bootstrap 4.6, 5',
-                                'JavaScript', 'ReactJS', 'NextJS'],
-                            autoStart: true,
-                            loop: true,
-                            // cursorClassName: 'text-warning',
-                            wrapperClassName: 'text-warning'
-                        }}
-                    />
-                </h1>
+                <div>
+                    <h1 className="text">Front-End Development  Courses
+                        <Typewriter
+                            options={{
+                                strings: [
+                                    'HTML', 'CSS', 'Bootstrap 4.6, 5',
+                                    'JavaScript', 'ReactJS', 'NextJS'],
+                                autoStart: true,
+                                loop: true,
+                                // cursorClassName: 'text-warning',
+                                wrapperClassName: 'text-warning'
+                            }}
+                        />
+                    </h1>
+                </div>
                 <div>
                     <button className="btn-contact">
                         CONTACT

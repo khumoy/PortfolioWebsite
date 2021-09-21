@@ -1,15 +1,12 @@
-// import { getAlbums, getTodos } from "../api";
-import { SET_STUDENTS } from "./types";
+import { TOGGLE_MENU } from "./types"
 
-export const setStudents = async (dispatch) => {
 
-    const data = await getStudents();
-
-    // console.log(data);
-
+const toggleMenu = (dispatch) => {
     dispatch({
-        type: SET_STUDENTS, payload: data,
-
+        type: TOGGLE_MENU
     })
+
+
 }
 
+export default toggleMenu;
