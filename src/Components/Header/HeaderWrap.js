@@ -55,7 +55,7 @@ position: relative;
 
                  transition: .6s;
                  text-decoration: none;
-                 border: 1px solid transparent;
+                 border: 2px solid transparent;
                  
                  :hover {
                      
@@ -107,12 +107,12 @@ position: relative;
                  font-weight: 600;
 
                  color: black;
-                 padding: 7px 15px;
-
+                 margin-top: 5px;
                  transition: .6s;
                  text-decoration: none;
-                 border: 1px solid transparent;
-                 line-height: 60px;
+                 border: 2px solid transparent;
+                 line-height: 30px;
+                 display: inline-block;
                  :hover {
                      
                     transition: .6s;

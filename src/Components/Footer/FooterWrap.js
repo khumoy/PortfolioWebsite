@@ -20,7 +20,7 @@ padding: 60px 5px 20px;
         a{
             text-decoration: none;
             color: black;
-            margin: 10px;
+            /* margin: 10px; */
         }
         .icons {
             display: flex;
@@ -45,6 +45,11 @@ padding: 60px 5px 20px;
         }
     }
 
+}
+@media (max-width: 600px){
+    a{
+        padding: 5px !important;
+    }
 }
 
 `

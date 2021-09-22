@@ -1,4 +1,3 @@
-import React from 'react'
 import Courses from '../Courses/Courses'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
@@ -13,7 +12,6 @@ const HomePage = () => {
             <Section />
             <Courses />
             <Footer />
-
         </HomeWrap>
     )
 }

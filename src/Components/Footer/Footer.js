@@ -8,10 +8,10 @@ const Footer = () => {
             <div className="footerjs">
                 <div className="lines container"></div>
                 <div className='social-media-icons'>
-                    <a href="#"> <div className="icons "><FaFacebookF /> </div></a>
-                    <a href="#"><div className="icons"><FaInstagram /></div></a>
-                    <a href="#"><div className="icons"><FaTelegram /></div></a>
-                    <a href="#"><div className="icons"><FaYoutube /></div></a>
+                    <a className="nav-link" href="/"> <div className="icons "><FaFacebookF /> </div></a>
+                    <a className="nav-link" href="/"><div className="icons"><FaInstagram /></div></a>
+                    <a className="nav-link" href="/"><div className="icons"><FaTelegram /></div></a>
+                    <a className="nav-link" href="/"><div className="icons"><FaYoutube /></div></a>
                 </div>
                 <p> Copyright. All rights reserved.</p>
             </div>
