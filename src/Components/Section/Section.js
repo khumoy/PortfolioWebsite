@@ -6,8 +6,8 @@ const Section = () => {
 
     return (
         <SectionWrap>
-            <div className="first-section pt-5">
-                <div>
+            <div className="first-section">
+                <div className='titles'>
                     <h1 className="text">Front-End Development  Courses
                         <Typewriter
                             options={{
@@ -17,17 +17,19 @@ const Section = () => {
                                 autoStart: true,
                                 loop: true,
                                 // cursorClassName: 'text-warning',
-                                wrapperClassName: 'text-warning'
+                                wrapperClassName: 'type-style'
                             }}
                         />
                     </h1>
+                    <div>
+                        <button className="btn-contact">
+                            CONTACT
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    <button className="btn-contact">
-                        CONTACT
-                    </button>
-                </div>
+
             </div>
+
         </SectionWrap>
     )
 }

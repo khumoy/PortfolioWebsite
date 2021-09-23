@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 export const FooterWrap = styled.div`
-background-color: darkslategrey;
+background-color: silver;
 padding: 60px 5px 20px;
     text-align: center;
 
 .footerjs {
+
     .lines {
         margin: 20px auto;
         height: 1px;
-        background-color: silver;
+        background-color: black;
 
     }
     .social-media-icons{
@@ -21,6 +22,9 @@ padding: 60px 5px 20px;
             text-decoration: none;
             color: black;
             /* margin: 10px; */
+        }
+        p{
+            /* color:  */
         }
         .icons {
             display: flex;
@@ -35,7 +39,7 @@ padding: 60px 5px 20px;
             transition: .4s;
 
             :hover {
-            color: yellow;
+            color: white;
             background-color: black;
             border-radius: 30%;
             transition: .4s;

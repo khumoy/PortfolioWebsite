@@ -2,8 +2,10 @@ import styled from 'styled-components'
 export const HeaderWrap = styled.div`
 position: relative;
 .scroll-active {
-        background-color: white !important;
+        /* background-color: white !important; */
+        backdrop-filter: blur(5px);
         transition: .4s;
+        
         .btn-menu {
             color: black !important;
         }
@@ -12,11 +14,14 @@ position: relative;
         }
         a {
             color: black !important;
+            :hover {
+                color: white !important ;
+            }
         }
     }
   
 .header {
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -35,7 +40,7 @@ position: relative;
     }
     
     .header-right{
-       
+        backdrop-filter: blur(6px);
         ul {
         list-style-type: none;
         display: none ; 
@@ -43,25 +48,26 @@ position: relative;
         align-items:center;
         transition: .5s;
         li {
-            padding-right: 25px;
+            /* padding-right: 25px; */
             margin-top: 15px;
+            margin-right: 5px;
 
              a { 
                  font-size: 19px;
                  font-weight: 600;
 
-                 color: white;
+                 color: black;
                  padding: 7px 15px;
-
+                 border-radius: 20px;
                  transition: .6s;
                  text-decoration: none;
                  border: 2px solid transparent;
                  
                  :hover {
-                     
-                     transition: .6s;
-                     color: yellow;
-                    border: 2px solid grey;
+                    background-color: black;    
+                    transition: .6s;
+                    color: white;
+                    border: 2px solid black;
                     border-radius: 20px ;
                     }
              }
@@ -74,10 +80,12 @@ position: relative;
     transition: .3s;
        
     .btn-menu {
-        color: white;
+        color: black;
         font-size: 25px;
+        backdrop-filter: blur(5px);
         background-color: transparent !important;
-         padding: 0;
+         padding: 5px;
+         margin: 10px 15px ;
          outline: none;
         border: none;
         display: block;
@@ -102,21 +110,23 @@ position: relative;
         ul {
             list-style-type: none;
             padding: 20px 0;
-            a{
-                font-size: 19px;
-                 font-weight: 600;
 
+            a{
+                 display: inline-block;
+                 font-size: 19px;
+                 font-weight: 600;
                  color: black;
                  margin-top: 5px;
                  transition: .6s;
                  text-decoration: none;
+                 border-radius: 20px ;
                  border: 2px solid transparent;
                  line-height: 30px;
-                 display: inline-block;
                  :hover {
-                     
+                    background-color: black;
+                    color: white;
                     transition: .6s;
-                    border: 2px solid grey;
+                    border: 2px solid black;
                     border-radius: 20px ;
                     }
             }
@@ -131,7 +141,7 @@ position: relative;
             border: none;
             background-color: transparent;
             outline: none;
-
+           
         }
     }
 }

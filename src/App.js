@@ -1,17 +1,26 @@
 import { Provider } from "react-redux";
-// import { Redirect, Route, Router, Switch } from "react-router";
-import HomePage from "./Components/HomePage/HomePage";
 import store from "./redux/store";
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+// import Courses from "./Components/Courses";
+// import Layout from "./Container/Layout";
+import DynamicPage from "./DynamicPage";
 
-function App() {
+
+const App = () => {
   return (
     <>
-      <Router>
-        <Provider store={store}>
-          <HomePage />
-        </Provider>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <Redirect to='/home' />
+            </Route>
+            <Route path="/:pages" exact>
+              <DynamicPage />
+            </Route>
+          </Switch>
+        </Router>
+      </Provider>
     </>
   );
 }
